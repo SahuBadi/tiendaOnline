@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi página</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--para que sea responsive-->
+    <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/12d6b690/img/favicon.ico" > <!--enlace a recurso-->
+
+    <title>Título</title>
+    <meta name="description" content="descripción de la web, se recomienda 90 caracteres">
+    <meta name="keywords" content="palabras clave, separadas, por comas">
+
+    <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Bienvenidos</h1>
+
+    <header>
+        <h1>Bienvenidos</h1>
+    </header>
+
+    <main>
+        <div class="form-element">
+            <form action="">
+                <div class="finput-name">
+                    <label for="fname">Nombre</label>
+                    <input type="text" id="fname" placeholder="ej. Ana">
+                </div>
+                <div class="finput-lastname">
+                    <label for="flastname">Apellido</label>
+                    <input type="text" id="flastname" placeholder="ej. Rodriguez">
+                </div>
+                <div class="btn-form">
+                    <button>Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>
