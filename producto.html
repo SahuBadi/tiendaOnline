@@ -7,67 +7,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
         <div class="two-columns">
             <div class="column">
-                <div class="bussiness-image"> <!--Logo y nombre de la empresa-->
-                    <div class="bussines-logo">
+                <div class="logo"> <!--Logo y nombre de la empresa-->
+                    <div class="logo-image">
                         <svg></svg>
                     </div>
-                    <div class="bussiness-name">
+                    <div class="logo-name">
                         <h1>Título</h1>
                     </div>
                 </div>
             </div>
             <div class="column">
-                <div class="main-menu"></div> <!--Menú-->
+                <div class="header-menu"></div> <!--Menú-->
             </div>
         </div>
     </header>
     <main>
-        <div class="two-columns">
-            <div class="column">
-                <div class="product-image"></div>
-                <div class="five-columns">
-                    <div class="gallery">
-                        <div class="column">
-                            <div class="small-gallery-image"></div>
+        <div class="product">
+            <div class="two-columns">
+                <div class="slider-gallery">
+                    <div class="column">
+                        <div class="slider-gallery-image">
+                            <img src="" alt="">
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="product-title">
-                    <h2>Velero de 12 metros de eslora</h2>
-                </div>
-                <div class="product-price">
-                    <h3><span>120€</span>/día</h3>
-                </div>
-                <div class="product-text"></div>
-                <div class="product-selector">
-                    <div class="two-columns">
-                        <div class="column">
-                            <label for=""></label>
-                        </div>
-                        <div class="column">
-                            <div class="product-select-days">
-                                <div class="product-minus-button">
-                                    <button></button>
-                                </div>
-                                <div class="product-days">
-                                    <input type="number">
-                                </div>
-                                <div class="product-plus-button">
-                                    <button></button>
+                        <div class="five-columns">
+                            <div class="gallery-miniatures">
+                                <div class="column">
+                                    <div class="small-gallery-image">
+                                        <img src="" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="button-booking"></div>
+                <div class="column">
+                    <div class="product-info">
+                        <div class="product-title">
+                            <h2>Velero de 12 metros de eslora</h2>
+                        </div>
+                        <div class="product-price">
+                            <h3><span>120€</span>/día</h3>
+                        </div>
+                        <div class="product-description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis et provident 
+                                ut nam minus cumque quos dolor asperiores, consequatur deleniti ex pariatur molestiae
+                                 voluptate libero, accusantium quibusdam distinctio, at cupiditate!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="select-amount">
+                        <div class="two-columns">
+                            <div class="column">
+                                <label for=""></label>
+                            </div>
+                            <div class="column">
+                                <div class="button-selector">
+                                    <div class="minus-button">
+                                        <button></button>
+                                    </div>
+                                    <div class="amount">
+                                        <input type="number">
+                                    </div>
+                                    <div class="plus-button">
+                                        <button></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-booking"></div>
+                </div>
             </div>
         </div>
     </main>
