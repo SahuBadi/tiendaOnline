@@ -347,10 +347,19 @@ footer{
 /* Components */
 
 /* Header */
-.logo{}
-.logo-image{}
-.logo-name{}
-.header-menu{}
+.logo{
+    display: flex;
+}
+.logo-image{
+    margin: auto 0;
+    transform: rotateX(40deg);
+}
+.logo-name{
+    margin: auto 0;
+}
+.header-menu{
+    
+}
 
 /* Footer */
 .bussiness-footer{}
@@ -453,12 +462,20 @@ footer{
 /*Título de página ----> se repite*/
 
 /*Cabecera resumen de productos en carrito*/
-.show-cart{}
-.show-cart-titles{}
+.show-cart{
+    display: flex;
+    flex-direction: row;
+}
+.show-cart-titles{
+    display : inherit;
+}
 .show-cart-title{}
 
 /*Resumen de productos en carrito*/
-.product{}
+.product{
+    display: flex;
+    flex-direction: row;
+}
 .cart-gallery-miniature{}
 .product-label{}
 .price-label{}
