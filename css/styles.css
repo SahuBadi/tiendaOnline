@@ -215,7 +215,7 @@ video{
 /* Typography */
 
 h1, h2, h3, h4, h5, h6, a, p{
-    color: hsl(0, 0%, 100%);
+    color: hsl(19, 55%, 34%);
 }
 
 h1, h2, h3, h4 {
@@ -345,3 +345,143 @@ footer{
 }
 
 /* Components */
+
+/* Header */
+.logo{}
+.logo-image{}
+.logo-name{}
+.header-menu{}
+
+/* Footer */
+.bussiness-footer{}
+.bussiness-footer-text{}
+.bussiness-footer-link{}
+
+/* +++---Home---+++ */
+
+/*Slider*/
+.slider{}
+.slider-image{}
+.slider-title{}
+.slider-button{}
+
+/*Tarjetas destacados*/
+.featured{}
+.featured-cards-title{}
+.featured-cards{}
+.featured-card{}
+.featured-card-img{}
+.featured-card-category{}
+.featured-card-title{}
+.featured-card-description{}
+
+/*Banner*/
+.banner{}
+.banner-text{}
+.banner-image{}
+
+/* +++---Productos---+++ */
+
+/*Menú lateral*/
+.products-categories{}
+.products-categories-title{}
+.products-categories-menu{}
+
+/*Contador resultados y filtro*/
+.products-results{}
+.products-results-counter{}
+.products-results-filter{}
+
+/*Tarjetas de productos*/
+.products-cards{}
+.product-card{}
+.product-card-img{}
+.product-card-price{}
+.product-card-text{}
+.product-card-button{}
+
+/* +++---Producto---+++ */
+
+/*Galería de producto*/
+.slider-gallery{}
+.slider-gallery-image{}
+.gallery-miniatures{}
+.gallery-miniature{}
+
+/*Info de producto*/
+.product-info{}
+.product-title{}
+.product-price{}
+.product-description{}
+
+/*Selector de cantidad ----> se repite*/
+.select-amount{}
+.select-amount-label{}
+.plus-minus-button{}
+.minus-button{}
+.amount{}
+.plus-button{}
+
+/*Botón de compra de producto*/
+.button-buy-product{}
+
+/* +++---Checkout---+++ */
+
+/*Título de página ----> se repite*/
+.page-title{}
+
+/*Formulario y sus elementos ----> se repite*/
+.register-form{}
+.form-element{}
+.form-element-label{}
+.form-element-input{}
+
+/*Resumen de compra ----> se repite*/
+.summary{}
+.summary-title{}
+.summary-element-title{}
+.summary-element-amount{}
+
+/*CheckList método de pago*/
+.check-list{}
+
+/*Botón de pago*/
+.pay-button{}
+
+/* +++---Carrito---+++ */
+
+/*Título de página ----> se repite*/
+
+/*Cabecera resumen de productos en carrito*/
+.show-cart{}
+.show-cart-titles{}
+.show-cart-title{}
+
+/*Resumen de productos en carrito*/
+.product{}
+.cart-gallery-miniature{}
+.product-label{}
+.price-label{}
+
+/*Selector de cantidad ----> se repite*/
+/*Resumen de compra ----> se repite*/
+
+/*Botones Volver y Comprar*/
+.navigation-buttons{}
+.return-button{}
+.buy-button{}
+
+/* +++---Contacto---+++ */
+
+/*Título de página ----> se repite*/
+
+/*Vías de contacto*/
+.contact-options{}
+.contact-option{}
+.contact-option-icon{}
+.contact-option-icon{}
+
+/*Formulario y sus elementos ----> se repite*/
+
+/*Botón de enviar*/
+.send-button{}
