@@ -347,8 +347,18 @@ footer{
 /* Components */
 
 /* Header */
+.background-header{
+    display: flex;
+    background-color: rgba(133, 87, 54, 0.637);
+    width: 100%;
+    height: 15vh;
+    
+}
 .logo{
     display: flex;
+    width: 100%;
+    height: 15vh;
+
 }
 .logo-image{
     margin: auto 0;
@@ -358,7 +368,23 @@ footer{
     margin: auto 0;
 }
 .header-menu{
-    
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 15vh;
+    background-color: red;
+
+}
+ul{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: flex-end;
+    background-color: red;
+    width: 100%;
+}
+.header-menu-item {
+    align-self: baseline;
 }
 
 /* Footer */
@@ -497,6 +523,12 @@ footer{
 .contact-option{}
 .contact-option-icon{}
 .contact-option-icon{}
+
+.contact-option-icon{
+    width:24px;
+    height:24px;
+    fill: cornflowerblue;
+}
 
 /*Formulario y sus elementos ----> se repite*/
 
