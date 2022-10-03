@@ -344,6 +344,10 @@ footer{
 
 }
 
+body{
+    background-color: hsl(31, 61%, 92%);
+}
+
 /* Components */
 
 /* Header */
@@ -351,13 +355,13 @@ footer{
     display: flex;
     background-color: rgba(133, 87, 54, 0.637);
     width: 100%;
-    height: 15vh;
+    height: 9vh;
     
 }
 .logo{
     display: flex;
     width: 100%;
-    height: 15vh;
+    height: 9vh;
 
 }
 .logo-image{
@@ -370,50 +374,106 @@ footer{
 .header-menu{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     width: 100%;
-    height: 15vh;
-    background-color: red;
-
+    height: 9vh;
 }
 ul{
     display: flex;
-    justify-content: flex-end;
     flex-direction: row;
-    align-items: flex-end;
-    background-color: red;
     width: 100%;
 }
 .header-menu-item {
-    align-self: baseline;
+    align-self: center;
 }
 
 /* Footer */
-.bussiness-footer{}
-.bussiness-footer-text{}
-.bussiness-footer-link{}
+.bussiness-footer{
+    height: 5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.bussiness-footer-text{
+    
+}
+.bussiness-footer-link{
+    
+}
 
 /* +++---Home---+++ */
 
 /*Slider*/
-.slider{}
-.slider-image{}
-.slider-title{}
-.slider-button{}
+.slider{
+    width: 100%;
+    height: 410px;
+    display: flex;
+}
+.slider-image{
+
+}
+.slider-title{
+    position: absolute;
+    background-color: rgba(255, 254, 254, 0.377);    
+}
+.slider-button{
+    position: absolute;
+}
 
 /*Tarjetas destacados*/
-.featured{}
-.featured-cards-title{}
-.featured-cards{}
-.featured-card{}
-.featured-card-img{}
-.featured-card-category{}
+.featured{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+.featured-cards-title{
+    align-self: center;
+    margin: 1.5rem;
+}
+.featured-cards{
+    display: flex;
+}
+.featured-card{
+    width: 80%;
+    height: 50vh;
+    align-self: center;
+    justify-content: space-around;
+    background-color:hsl(24, 51%, 81%);
+    border: 2px , solid, black;
+    border-radius: 25px;
+}
+.featured-card-img{
+    width: 100%;
+    height: 35vh;
+    background-color: aliceblue;
+}
+.featured-card-category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .featured-card-title{}
 .featured-card-description{}
 
 /*Banner*/
-.banner{}
-.banner-text{}
-.banner-image{}
+.banner{
+    display: flex;
+}
+.banner-text{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-image{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* +++---Productos---+++ */
 
