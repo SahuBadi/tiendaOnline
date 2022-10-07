@@ -474,7 +474,7 @@ body{
 
 .featured-card{
     width: 100%;
-    height: 59vh;
+    min-height: 60vh;
     background-color:hsl(24, 51%, 81%);
     border: 4px solid hsl(0, 0%, 100%);
     border-radius: 2em;
@@ -818,6 +818,10 @@ li{
     width: 100%;
     align-self: center;
     margin: 0 1rem;
+
+}
+.cart-title-product{
+    
 }
 
 /*Resumen de productos en carrito*/
