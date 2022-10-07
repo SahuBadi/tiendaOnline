@@ -464,7 +464,7 @@ body{
     margin: 2rem;
 }
 .featured-cards-title h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .featured-cards{
@@ -474,7 +474,7 @@ body{
 
 .featured-card{
     width: 100%;
-    height: 57vh;
+    height: 59vh;
     background-color:hsl(24, 51%, 81%);
     border: 4px solid hsl(0, 0%, 100%);
     border-radius: 2em;
@@ -571,7 +571,7 @@ li{
 }
 .product-card{
     width: 100%;
-    height: 68vh;
+    height: 68.5vh;
     background-color:hsl(24, 51%, 81%);
     border: 4px solid hsl(0, 0%, 100%);
     border-radius: 0.6em;
@@ -580,6 +580,8 @@ li{
     position: relative;
 }
 .product-card-img{
+    height: 30rem;
+    overflow: hidden;
     
 }
 .product-card-price{
@@ -590,7 +592,7 @@ li{
     padding: 0.5rem;
 }
 .product-price{
-    color: #fff;
+    color: hsl(0, 0%, 100%);
 }
 .product-card-text{
     text-align: center;
@@ -598,6 +600,12 @@ li{
 }
 .product-card-button{
     display:flex;
+}
+.product-card-button .custom-button{
+    border-top-right-radius: 0rem;
+    border-top-left-radius: 0rem;
+    border: none;
+    border-top: 0.1rem solid hsl(0, 0%, 100%);
 }
 
 /* +++---Producto---+++ */
@@ -619,7 +627,7 @@ li{
     padding: 0 20%;
 }
 .gallery-miniature{
-    
+    /* margin-right: 1rem; */
 }
 
 /*Info de producto*/
@@ -665,6 +673,17 @@ li{
 }
 .amount{
 
+}
+.amount input{
+    width: 2rem;
+    height: 2.9rem;
+    line-height: 1.65;
+    float: left;
+    display: block;
+    padding: 0;
+    margin: 0;
+    padding-left: 1.5rem;
+    border: 1px solid hsl(0, 0%, 100%);
 }
 .plus-button .custom-button{
     border-top-left-radius: 0rem;
@@ -803,7 +822,7 @@ li{
 
 /*Resumen de productos en carrito*/
 .product{
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-around;
 }
@@ -824,6 +843,7 @@ li{
 .price-label{
     width: 100%;
     align-self: center;
+    padding-right: 1rem;
 
 }
 .price-label h4{
@@ -831,7 +851,9 @@ li{
 }
 /*Selector de cantidad ----> se repite*/
 .button-cart{
+    
 }
+
 /*Resumen de compra ----> se repite*/
 .cart-summary{
     padding: 1rem 60%;
