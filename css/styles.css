@@ -676,7 +676,7 @@ li{
 }
 .amount input{
     width: 2rem;
-    height: 2.9rem;
+    height: 2.85rem;
     line-height: 1.65;
     float: left;
     display: block;
@@ -817,41 +817,36 @@ li{
 .show-cart-title{
     width: 100%;
     align-self: center;
-    margin: 0 10px;
+    margin: 0 1rem;
 }
 
 /*Resumen de productos en carrito*/
 .product{
     width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .cart-gallery-miniature{
-    width: 100%;
-    align-self: center;
+
 
 }
 .product-label{
-    width: 100%;
-    align-self: center;
+
  
 }
 .product-label h4{
     font-size: 1.5rem;
 }
 .price-label{
-    width: 100%;
-    align-self: center;
-    padding-right: 1rem;
-
+    margin-right: 3rem;
 }
 .price-label h4{
     font-size: 1.5rem;
 }
 /*Selector de cantidad ----> se repite*/
 .button-cart{
-    
+    margin-right: 1rem;
 }
 
 /*Resumen de compra ----> se repite*/
