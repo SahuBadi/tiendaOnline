@@ -385,6 +385,9 @@ body{
 .logo-name{
     margin: auto 0;
 }
+.logo-name span{
+    font-size: 2rem;
+}
 
 .header-menu{
     display: flex;
@@ -402,7 +405,9 @@ body{
     align-self: center;
     margin: 0 10px;
 }
-
+.header-menu-item a{
+    font-size: 1.5rem;
+}
 /* Footer */
 .bussiness-footer{
     height: 5rem;
