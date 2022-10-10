@@ -85,6 +85,7 @@ textarea {
     font-size: 100%; /* 1 */
     line-height: 1.15; /* 1 */
     margin: 0; /* 2 */
+    padding: 0.3rem 0;
     width: 100%;
 }
 
@@ -92,8 +93,8 @@ button,
 input,
 textarea { /* 1 */
     overflow: visible;
-    padding: 0.5rem 0.5rem;
 }
+
 textarea:focus, input:focus, select{
     outline: none;
 }
@@ -212,12 +213,24 @@ input::-webkit-inner-spin-button {
 img{
     object-fit: cover;
     max-width: 100%;
-    width: 100%;
 }
 
 video{
     object-fit: cover;
     max-width: 100%;
+}
+
+.fixed-highed{
+    height: 100%;
+}
+
+.fixed-highed div:last-child{
+    bottom: 0;
+    width: 100%;
+}
+
+.column:has(.fixed-highed){
+    padding-bottom: 2rem;
 }
 
 /* Typography */
@@ -354,14 +367,6 @@ header{
     width: 96%;
 }
 
-main{
-
-}
-
-footer{
-
-}
-
 body{
     background-color: hsl(31, 61%, 92%);
 }
@@ -371,20 +376,17 @@ body{
 /* Header */
 
 .logo{
+    align-items: center;
     display: flex;
     width: 100%;
-    height: 7vh;
+    height: 100%;
 }
 
 .logo-image{
-    margin: auto 0;
     margin-right: 1rem;
     transform: rotateZ(-40deg);
 }
 
-.logo-name{
-    margin: auto 0;
-}
 .logo-name span{
     font-size: 2rem;
 }
@@ -396,34 +398,39 @@ body{
     width: 100%;
     height: 7vh;
 }
-.hmenu{
-    display: flex;
-    flex-direction: row;
+
+.header-menu nav{
+    height: 100%;
     width: 100%;
+}
+
+.header-menu ul{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    margin-left: auto;
+    width: 40%;
 }
 .header-menu-item {
     align-self: center;
-    margin: 0 10px;
 }
+
 .header-menu-item a{
     font-size: 1.5rem;
 }
 /* Footer */
 .bussiness-footer{
-    height: 5rem;
-    display:flex;
-    justify-content: center;
+    height: 10vh;
     align-items: center;
-    position: relative;
-   /* bottom: -15%;*/
 }
 .bussiness-footer-text{
-    position: absolute;
-    margin-bottom: 2rem;
-    
+    margin-bottom: 1rem;
+    text-align: center;
 }
+
 .bussiness-footer-link{
-    position: absolute;
+    text-align: center;
 }
 
 /* +++---Home---+++ */
@@ -431,27 +438,30 @@ body{
 /*Slider*/
 .slider{
     width: 100%;
-    height: 410px;
-    display: flex;
+    height: 50vh;
     position: relative;
     overflow: hidden;
 }
+
 .slider-image{
     width: 100%;
 }
+
 .slider-title{
     position: absolute;
     background-color: rgba(247, 247, 247, 0.527);    
     top: 40%;
+    padding: 0.5rem;
     left: 10%;
     z-index: 100;
 }
+
 .slider-title h1{
     font-size: 3.5rem;
 }
 .slider-button{
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 10%;
     z-index: 100;
 }
@@ -479,15 +489,11 @@ body{
 
 .featured-card{
     width: 100%;
-    min-height: 57vh;
     background-color:hsl(24, 51%, 81%);
     border: 4px solid hsl(0, 0%, 100%);
     border-radius: 2em;
     overflow: hidden;
-}
-
-.featured-card-img{
-    
+    padding-bottom: 0.5rem;
 }
 
 .featured-card-category{
@@ -500,21 +506,17 @@ body{
     margin-bottom: 0.5rem;
 }
 .featured-card-description{
-    margin-left: 5%;
+    margin: 0 1rem;
 }
 
 /*Banner*/
 .banner{
     display: flex;
     width: 90%;
-    padding: 0 5%;
+    padding: 5rem 5%;
 }
 .banner-text{
     width: 90%;
-    height: 65vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align:left;
     padding: 0 10%;
 }
@@ -523,10 +525,6 @@ body{
 }
 .banner-image{
     width: 100%;
-    height: 65vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* +++---Productos---+++ */
@@ -548,13 +546,9 @@ body{
     font-size: 2rem;
     margin-bottom: 1.7rem;
 }
-.products-categories-menu{
-    
-}
-li{
+
+.products-categories-menu ul li{
     margin-bottom: 1rem;
-    font-weight: 100;
-    font-size: 1.5rem;
 }
 
 /*Contador resultados y filtro*/
@@ -562,14 +556,13 @@ li{
     width: 100%;
     padding: 3rem 0;
 }
-.products-results-counter{}
-.products-results-counter h3{
-    
-}
+
 .products-results-filter{
     border: 2px solid #fff;
     border-radius: 0.5em;
     background-color: hsl(23, 100%, 97%);
+    margin-left: auto;
+    width: 30%;
 }
 
 /*Tarjetas de productos*/
@@ -578,9 +571,9 @@ li{
     display: flex;
     margin-bottom: 5rem;
 }
+
 .product-card{
     width: 100%;
-    height: 64vh;
     background-color:hsl(24, 51%, 81%);
     border: 4px solid hsl(0, 0%, 100%);
     border-radius: 0.6em;
@@ -589,14 +582,14 @@ li{
     position: relative;
 }
 .product-card-img{
-    height: 30rem;
+    max-height: 40vh;
     overflow: hidden;
 }
 .product-card-price{
     background-color: rgb(168, 121, 94);
     position: absolute;
-    top: 0rem;
-    right: 0rem;
+    top: 0;
+    right: 0;
     padding: 0.5rem;
 }
 .product-price{
@@ -620,29 +613,24 @@ li{
 
 /*Galería de producto*/
 .product{
-    padding: 2rem 0;
+    padding: 2rem 10%;
+    width: 80%;
 }
 
-.slider-gallery{
-    
-}
 .slider-gallery-image{
-    width: 80%;
-    padding: 3rem 10%;
+    padding: 3rem 0;
 }
 .gallery-miniatures{
-    width: 60%;
-    padding: 0 20%;
+    margin: 0 auto;
+    width: 90%;
 }
+
 .gallery-miniature{
-    /* margin-right: 1rem; */
+    width: 100%;
 }
 
 /*Info de producto*/
-.product-info{
-    width: 90%;
-    padding: 0 5%;
-}
+
 .product-title{
     padding: 2rem 0;
 }
@@ -659,43 +647,43 @@ li{
     width: 90%;
     padding: 0 5%;
     display: flex;
-    align-content: flex-start;
 }
+
 .select-amount-label{
     padding: 0.5rem ;
-    margin-right: 20%;
+    margin-right: 5rem;
 }
+
 .select-amount-label label{
     font-size: 1.5rem;
 }
+
 .plus-minus-button{
+    height: 5vh;
     width: 10%;
     display: flex;
-    
 }
 
 .minus-button .custom-button{
-    border-top-right-radius: 0rem;
-    border-bottom-right-radius: 0rem;
-    
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
-.amount{
 
+.amount{
+    height: 100%;
 }
+
 .amount input{
-    width: 2rem;
-    height: 2.85rem;
-    line-height: 1.65;
-    float: left;
-    display: block;
+    height: 100%;
+    width: 3rem;
     padding: 0;
-    margin: 0;
-    padding-left: 1.5rem;
+    text-align: center;
     border: 1px solid hsl(0, 0%, 100%);
 }
+
 .plus-button .custom-button{
-    border-top-left-radius: 0rem;
-    border-bottom-left-radius: 0rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 /*Botón de compra de producto*/
@@ -707,8 +695,6 @@ li{
 /* +++---Checkout---+++ */
 
 /*Título de página ----> se repite*/
-.page-title{}
-
 .checkout{
     padding: 0 10%;
     min-height: 80vh;
@@ -717,27 +703,31 @@ li{
 
 /*Formulario y sus elementos ----> se repite*/
 .register-form{
-    padding: 3rem 4.5rem;
+    padding: 3rem 10%;
     border-right: solid #fff 3px;
     width: 80%;
-    height: 80%;
 }
 
 .form-element{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
+
 .form-element-label{
-    margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
+
 .form-element-label label{
     font-size: 1.5rem;
 }
+
 .form-element-input{
     border: 2px solid hsl(0, 0%, 100%);
-    background-color: hsl(0, 0%, 100%);
     border-radius: 0.5em;
-    overflow: hidden;
+    width: 100%;
+}
+
+.form-element-input input{
+    width: 100%;
 }
 
 /*Resumen de compra ----> se repite*/
@@ -746,9 +736,9 @@ li{
     margin-bottom: 2rem;
     border: 4px solid hsl(0, 0%, 100%);
     border-radius: 0.5rem;
-    width: 80%;
     overflow: hidden;
 }
+
 .summary-title{
     border-bottom: 0.2rem solid hsl(0, 0%, 100%);
     font-weight: 700;
@@ -758,11 +748,13 @@ li{
     text-align: center;
     background-color: hsl(28, 30%, 74%);
 }
+
 .summary-element-title{
     padding: 0.5rem;
     text-align: center;
     font-size: 1.5rem;
 }
+
 .summary-element-amount{
     padding: 0.5rem;
     text-align: center;
@@ -770,24 +762,26 @@ li{
 }
 
 /*CheckList método de pago*/
+/*TODO simplificar el diseño de los input radio*/
 .check-list{
     padding: 0.5rem;
     margin-bottom: 2rem;
-    
 }
+
 .form-element-inputcheck{
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 	padding: 1rem 0 0 4rem;
-	display: block;
 }
+
 .form-element-inputcheck input[type=radio]{
     position: absolute;
-    height: 15px;
-    width: 15px;
+    height: 1rem;
+    width: 1rem;
     border-radius: 100%;
     left: 15px;
 }
+
 .form-element-inputcheck label{
     font-size: 1.5rem;
 }
@@ -802,57 +796,38 @@ li{
 
 /*Título de página ----> se repite*/
 
+/* TODO usar nombres más abstractos para los elementos de la tabla */
+
 /*Cabecera resumen de productos en carrito*/
 .cart{
     padding: 0 10%;
     min-height: 80vh;
     width: 80%;
 }
-.show-cart{
-    display: flex;
-    width: 100%;
-    
-}
 
 .show-cart-titles{
     width: 100%;
-    display : flex;
-    padding: 1rem 2rem;
-    justify-content: space-around;
+    padding: 1rem 0;
     border-bottom: 0.2rem solid hsl(0, 0%, 100%);
-    font-size: 1.5rem;
 }
-.show-cart-title{
-    width: 100%;
-    align-self: center;
-    margin: 0 1rem;
 
-}
-.cart-title-product{
-    
+.show-cart-title h4{
+    font-size: 1.5rem;
 }
 
 /*Resumen de productos en carrito*/
-.product{
-    width: 90%;
+.item{
+    width: 100%;
+    padding: 1rem 0;
     display: flex;
-    justify-content: space-between;
-}
-
-.cart-gallery-miniature{
-
 
 }
-.product-label{
 
- 
-}
-.product-label h4{
+.item-label h4{
     font-size: 1.5rem;
+    text-align: left;
 }
-.price-label{
-    margin-right: 3rem;
-}
+
 .price-label h4{
     font-size: 1.5rem;
 }
@@ -863,27 +838,20 @@ li{
 
 /*Resumen de compra ----> se repite*/
 .cart-summary{
-    padding: 1rem 60%;
-    width: 40%;
-    display: flex;
-    justify-content: flex-end;
+    margin-left: auto;
+    width: 30%;
 }
 /*Botones Volver y Comprar*/
 .navigation-buttons{
-    width: 100%;
-    padding: 1rem 30%;
+    width: 30%;
+    padding: 1rem 0;
     display: flex;
-    justify-content: flex-end;
-    margin: 0 1rem;
+    margin-left: auto;
+}
 
-}
+.buy-button,
 .return-button{
-    padding: 0 75%;
-    width: 20%;
-}
-.buy-button{
-    padding: 0 15%;
-    width: 20%;
+    width: 100%;
 }
 
 /* +++---Contacto---+++ */
@@ -897,27 +865,23 @@ li{
     width: 60%;
 }
 
-.page-title{
-    text-align: center;
-    margin: 2rem 0 4rem 0;
-}
-.page-title h1{
-    font-size: 3rem;    
-}
-
-.contact-options{
-
-}
-
 .contact-option{
     display: flex;
 }
 
 .contact-option-icon{
-    width:30px;
-    height:30px;
-    fill: hsl(24, 69%, 25%);
+   
     padding: 1rem;
+}
+
+.contact-option-icon svg{
+    width: 2rem;
+    height: 2rem;
+}
+
+.contact-option-icon svg path{
+    fill: hsl(24, 69%, 25%);
+
 }
 
 .contact-option-info{
@@ -944,9 +908,19 @@ li{
     background: rgb(115,55,12);
     background: linear-gradient(90deg, rgba(115,55,12,1) 0%, rgba(125,50,25,1) 33%, rgba(190,113,80,1) 100%);
     color: hsl(0, 0%, 100%);
+    cursor: pointer;
     border: 2px solid hsl(0, 0%, 100%);
     border-radius: 8px;
     width: 100%;
     height: 3rem;
     font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+.page-title{
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+}
+.page-title h1{
+    font-size: 3rem;    
 }
