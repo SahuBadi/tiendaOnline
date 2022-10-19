@@ -1,0 +1,39 @@
+.featured{
+    padding: 0 10%;
+    width: 80%;
+}
+
+.featured-cards-title{
+    text-align: center;
+    margin: 2rem;
+}
+.featured-cards-title h2{
+    font-size: 2.5rem;
+}
+
+.featured-cards{
+    display: flex;
+    width: 100%;
+}
+
+.featured-card{
+    width: 100%;
+    background-color:hsl(24, 51%, 81%);
+    border: 4px solid hsl(0, 0%, 100%);
+    border-radius: 2em;
+    overflow: hidden;
+    padding-bottom: 0.5rem;
+}
+
+.featured-card-category{
+    text-align: left;
+    margin: 0.5rem 1rem;
+}
+
+.featured-card-title{
+    margin-left: 5%;
+    margin-bottom: 0.5rem;
+}
+.featured-card-description{
+    margin: 0 1rem;
+}
