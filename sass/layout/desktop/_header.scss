@@ -1,47 +1,3 @@
-/*header{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 5%;
-    width: 90%;
-    z-index: $z-index-header;
-
-    .header-logo{
-        display: flex;
-        width: max-content;
-
-        .header-logo-image svg{
-            height: 3rem;
-            width: 3rem;
-    
-            path{
-                fill:$secondary-color;
-            }
-        }
-
-        .header-logo-title{
-            margin-left: 1rem;
-
-            h1{
-                text-align: left;
-            }
-        }
-    }
-
-    .header-menu{
-        margin-left: auto;
-        width: max-content;
-
-        ul li{
-            color:hsl(0, 0%, 100%);
-            cursor: pointer;
-            display: inline;
-            font-size: 1.5rem;
-            margin: 0 0.5rem;
-        }
-    }
-}
-*/
-
 header{
     background-color: rgba(133, 87, 54, 0.637);
     height: 7vh;
@@ -71,29 +27,31 @@ header{
         width: 100%;
         height: 7vh;
     
-        .header-menu nav{
+        nav{
             height: 100%;
             width: 100%;
+        }
+
+        ul{
+            align-items: center;
+            display: flex;
+            height: 100%;
+            justify-content: space-between;
+            margin-left: auto;
+            width: 40%;
+        
+            .header-menu-item {
+                align-self: center;
+            }
+        
+            .header-menu-item a{
+                font-size: 1.5rem;
+            }
         }
         
     }
 
-    .header-menu ul{
-        align-items: center;
-        display: flex;
-        height: 100%;
-        justify-content: space-between;
-        margin-left: auto;
-        width: 40%;
-    
-        .header-menu-item {
-            align-self: center;
-        }
-    
-        .header-menu-item a{
-            font-size: 1.5rem;
-        }
-    }
+
 }
 
 

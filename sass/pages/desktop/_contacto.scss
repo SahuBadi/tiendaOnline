@@ -26,12 +26,14 @@
 
 .contact-option-info{
     padding: 1rem;
+
+    span{
+        font-weight: 500;
+        font-size: 1.7rem;
+    }
 }
 
-.contact-option-info span{
-    font-weight: 500;
-    font-size: 1.5rem;
-}
+
 
 .send-button{
     margin-left: auto;
