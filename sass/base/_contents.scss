@@ -14,10 +14,6 @@ video{
     max-width: 100%;
 }
 
-.hidden{
-    display: none;
-}
-
 .fixed-hight{
     height: 100%;
 }
@@ -29,5 +25,9 @@ video{
 }
 
 div:has(.fixed-hight){
+    padding-bottom: 2rem;
+}
+
+.column:has(.fixed-highed){
     padding-bottom: 2rem;
 }

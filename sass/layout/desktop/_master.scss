@@ -1,4 +1,4 @@
-body{
+/*body{
     background-color: $primary-color;
     display:flex; 
     flex-direction:column;    
@@ -18,4 +18,9 @@ main{
 
 .mobile-only{
     display: none;
+}*/ 
+
+
+body{
+    background-color: $main-color;
 }

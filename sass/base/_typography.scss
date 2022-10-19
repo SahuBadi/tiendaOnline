@@ -1,17 +1,24 @@
-h1, h2, h3, h4, h5, h6, a, p{
-    color: hsl(0, 0%, 100%);
+
+/******************************************************/
+/* Typography */
+
+h1, h2, h3, h4, h5, h6, a, p, span{
+    color: $font-color;
 }
 
 h1, h2, h3, h4 {
-    font-family: $font-stack;
+    font-family: 'Lora', serif;
 }
 
 h5, h6 {
-    font-family: $font-stack-condensed;
+    font-family: 'Lora', serif;
 }
 
 a, td, th, p, button, span, label, select, input, textarea, li{
-    font-family: $font-stack;
+    font-family: 'Lora', serif;
+    color: $font-color;
+    font-weight: 700;
+    font-size: large;
 }
 
 h1 {
@@ -45,3 +52,5 @@ a {
         outline-offset: 0;
     }
 }
+
+
