@@ -1,0 +1,81 @@
+/* +++---Productos---+++ */
+
+/*Menú lateral*/
+.products{
+    padding: 3em 10%;
+    min-height: 80vh;
+    width: 80%;
+}
+.products-categories{
+    padding: 3rem 0;
+    border-right: solid #fff 3px;
+    width: 100%;
+    height: 80%;
+}
+.products-categories-title{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1.7rem;
+}
+
+.products-categories-menu ul li{
+    margin-bottom: 1rem;
+}
+
+/*Contador resultados y filtro*/
+.products-results{
+    width: 100%;
+    padding: 3rem 0;
+}
+
+.products-results-filter{
+    border: 2px solid #fff;
+    border-radius: 0.5em;
+    background-color: hsl(23, 100%, 97%);
+    margin-left: auto;
+    width: 30%;
+}
+
+/*Tarjetas de productos*/
+.products-cards{
+    width: 100%;
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.product-card{
+    width: 100%;
+    background-color: $main-color-card;
+    border: 4px solid $white-color;
+    border-radius: 0.6em;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px $shadow-color;
+    position: relative;
+}
+.product-card-img{
+    max-height: 40vh;
+    overflow: hidden;
+}
+.product-card-price{
+    background-color: rgb(168, 121, 94);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+}
+.product-price{
+    color: $white-color;
+}
+.product-card-text{
+    text-align: center;
+    padding: 1rem 0;
+}
+.product-card-button{
+    display:flex;
+}
+.product-card-button .custom-button{
+    border-top-right-radius: 0rem;
+    border-top-left-radius: 0rem;
+    border: none;
+    border-top: 0.1rem solid $white-color;
+}

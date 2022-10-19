@@ -1,0 +1,39 @@
+/*Vías de contacto*/
+.contact{
+    padding: 0 20%;
+    min-height: 80vh;
+    width: 60%;
+}
+
+.contact-option{
+    display: flex;
+}
+
+.contact-option-icon{
+   
+    padding: 1rem;
+}
+
+.contact-option-icon svg{
+    width: 2rem;
+    height: 2rem;
+}
+
+.contact-option-icon svg path{
+    fill: hsl(24, 69%, 25%);
+
+}
+
+.contact-option-info{
+    padding: 1rem;
+}
+
+.contact-option-info span{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.send-button{
+    margin-left: auto;
+    width: max-content;
+}

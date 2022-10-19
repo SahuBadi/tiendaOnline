@@ -1,0 +1,24 @@
+/*Galería de producto*/
+.product{
+    padding: 2rem 10%;
+    width: 80%;
+}
+
+/*Info de producto*/
+
+.product-title{
+    padding: 2rem 0;
+}
+.product-price{
+    margin-bottom: 1rem;
+}
+.product-description{
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+/*Botón de compra de producto*/
+.button-buy-product{
+    padding: 2rem 5%;
+    width: max-content;
+}

@@ -1,0 +1,42 @@
+.select-amount{
+    width: 90%;
+    padding: 0 5%;
+    display: flex;
+}
+
+.select-amount-label{
+    padding: 0.5rem ;
+    margin-right: 5rem;
+}
+
+.select-amount-label label{
+    font-size: 1.5rem;
+}
+
+.plus-minus-button{
+    height: 5vh;
+    width: 10%;
+    display: flex;
+}
+
+.minus-button .custom-button{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.amount{
+    height: 100%;
+}
+
+.amount input{
+    height: 100%;
+    width: 3rem;
+    padding: 0;
+    text-align: center;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+.plus-button .custom-button{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}

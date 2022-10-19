@@ -1,0 +1,54 @@
+.cart{
+    padding: 0 10%;
+    min-height: 80vh;
+    width: 80%;
+}
+
+.show-cart-titles{
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 0.2rem solid $white-color;
+}
+
+.show-cart-title h4{
+    font-size: 1.5rem;
+}
+
+/*Resumen de productos en carrito*/
+.item{
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+
+}
+
+.item-label h4{
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.price-label h4{
+    font-size: 1.5rem;
+}
+/*Selector de cantidad ----> se repite*/
+.button-cart{
+    margin-right: 1rem;
+}
+
+/*Resumen de compra ----> se repite*/
+.cart-summary{
+    margin-left: auto;
+    width: 30%;
+}
+/*Botones Volver y Comprar*/
+.navigation-buttons{
+    width: 30%;
+    padding: 1rem 0;
+    display: flex;
+    margin-left: auto;
+}
+
+.buy-button,
+.return-button{
+    width: 100%;
+}

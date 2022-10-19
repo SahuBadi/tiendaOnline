@@ -9,14 +9,21 @@
 @import "layout/desktop/header";
 @import "layout/desktop/footer";
 @import "layout/desktop/columns";
+@import "components/desktop/amount-selector";
 @import "components/desktop/banner";
 @import "components/desktop/cbutton";
 @import "components/desktop/featured-cards";
 @import "components/desktop/form";
+@import "components/desktop/gallery";
 @import "components/desktop/ptitle";
 @import "components/desktop/slider";
 @import "components/desktop/summary";
 @import "pages/desktop/index";
+@import "pages/desktop/carrito";
+@import "pages/desktop/checkout";
+@import "pages/desktop/contacto";
+@import "pages/desktop/producto";
+@import "pages/desktop/productos";
 
 
 
