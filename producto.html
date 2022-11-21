@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="module" src="js/index.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
@@ -126,13 +127,13 @@
                         </div>
                         <div class="plus-minus-button">
                             <div class="minus-button">
-                                <button class="custom-button">-</button>
+                                <button id="minus" class="custom-button">-</button>
                             </div>
                             <div class="amount">
-                                <input type="number" value="1">
+                                <input id="cantidad" type="number" value="1">
                             </div>
                             <div class="plus-button">
-                                <button class="custom-button">+</button>
+                                <button id="plus" class="custom-button">+</button>
                             </div>
                         </div>
                     </div>
@@ -155,7 +156,6 @@
             </div>
         </div>
     </footer>
-
 
 </body>
 
