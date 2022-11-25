@@ -19,7 +19,7 @@ export let renderTextTabs = () => {
                 if(tab.dataset.index == content.dataset.index) {
                     content.classList.add("active")
                 }else{
-                    content.classList.remove("active")    
+                    content.classList.remove("active")
                 }
             })
 

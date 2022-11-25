@@ -677,6 +677,11 @@ footer .bussiness-footer-link {
   font-size: 1.7rem;
 }
 
+
+.counter{
+  padding-left: 24rem;
+}
+
 .featured-cards {
   display: flex;
   width: 100%;
