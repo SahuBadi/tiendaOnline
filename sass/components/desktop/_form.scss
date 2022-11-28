@@ -1,4 +1,6 @@
-
+.form {
+    position: absolute;
+}
 .form-element{
     margin-bottom: 2rem;
 
@@ -22,6 +24,37 @@
     .counter{
         padding-left: 24rem;
     }
+
+    .invalid{
+        border: 2px solid hsl(0, 88%, 62%);
+        border-radius: 0.5em;
+        width: 100%;
+      }
+    
+      .notification {
+        border: 2px solid hsl(27, 55%, 32%);
+        border-radius: 0.5em;
+        background-color: hsla(32, 46%, 82%, 0.473);
+        padding: 2rem;
+        width: 10%;
+        display: flex;
+        margin-left: 38rem;
+        justify-content: center;
+        position: fixed;
+        
+      }
+      
+      .notification .error{
+        border: 2px solid hsl(0, 88%, 62%);
+        background-color: hsla(0, 100%, 87%, 0.342);
+        
+      }
+      
+      .notification .success{
+        border: 2px solid hsl(115, 48%, 40%);
+        background-color: hsla(138, 100%, 87%, 0.342);
+        
+      }
 }
 
 

@@ -136,70 +136,75 @@
                     </div>
                 </div>
                 <div class="column">
-                    <div class="contact-form">
-                        <div class="two-columns">
-                            <div class="column">
-                                <div class="form-element">
-                                    <div class="form-element-label">
-                                        <label for="fname">Nombre</label>
+                    <form action="">
+                        <div class="contact-form">
+                            <div class="two-columns">
+                                <div class="column">
+                                    <div class="form-element">
+                                        <div class="form-element-label">
+                                            <label for="fname">Nombre</label>
+                                        </div>
+                                        <div class="form-element-input">
+                                            <input id="fname" name="fname" type="text">
+                                        </div>
                                     </div>
-                                    <div class="form-element-input">
-                                        <input id="fname" type="text">
+                                </div>
+                                <div class="column">
+                                    <div class="form-element">
+                                        <div class="form-element-label">
+                                            <label for="lname">Apellidos</label>
+                                        </div>
+                                        <div class="form-element-input">
+                                            <input id="lname" name="lname" type="text">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="column">
-                                <div class="form-element">
-                                    <div class="form-element-label">
-                                        <label for="lname">Apellidos</label>
-                                    </div>
-                                    <div class="form-element-input">
-                                        <input id="lname" type="text">
+                            <div class="two-columns">
+                                <div class="column">
+                                    <div class="form-element">
+                                        <div class="form-element-label">
+                                            <label for="telf">Teléfono</label>
+                                        </div>
+                                        <div class="form-element-input">
+                                            <input id="telf" name="telf" type="number">
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="column">
+                                    <div class="form-element">
+                                        <div class="form-element-label">
+                                            <label for="mail">Email</label>
+                                        </div>
+                                        <div class="form-element-input">
+                                            <input id="mail" name="email" type="email">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one-column">
+                                <div class="column">
+                                    <div class="form-element">
+                                        <div class="form-element-label">
+                                            <label for="cmessage">Mensaje</label> <span class="counter"></span>
+                                        </div>
+                                        <div class="form-element-input">
+                                            <textarea name="text" id="cmessage" cols="30" rows="10" data-max="/550" maxlength="550"></textarea> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="send-button">
+                                <button class="custom-button send-form-button">Enviar</button>
                             </div>
                         </div>
-                        <div class="two-columns">
-                            <div class="column">
-                                <div class="form-element">
-                                    <div class="form-element-label">
-                                        <label for="telf">Teléfono</label>
-                                    </div>
-                                    <div class="form-element-input">
-                                        <input id="telf" type="tel">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="form-element">
-                                    <div class="form-element-label">
-                                        <label for="mail">Email</label>
-                                    </div>
-                                    <div class="form-element-input">
-                                        <input id="mail" type="email" required>
-                                    </div>
-                                </div>
-                            </div>
+                        <div id="notification" class="notification">
+                            <p id="notification-message"></p>
                         </div>
-                        <div class="one-column">
-                            <div class="column">
-                                <div class="form-element">
-                                    <div class="form-element-label">
-                                        <label for="cmessage">Mensaje</label> <span class="counter"></span>
-                                    </div>
-                                    <div class="form-element-input">
-                                        <textarea name="" id="cmessage" cols="30" rows="10" data-max="/550" maxlength="550"></textarea> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="send-button">
-                            <button class="custom-button">Enviar</button>
-                        </div>
-                    </div>
-                   
+                    </form>
                 </div>
             </div>
+
         </div>
     </main>
     <footer>

@@ -1,4 +1,3 @@
-console.log("hola")
 export let renderPlusMinusButton = () => {
 
     let plus = document.querySelectorAll(".plus-button > button");

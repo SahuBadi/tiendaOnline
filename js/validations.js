@@ -1,12 +1,81 @@
-export const renderValidator = () => {
+import {renderNotification} from "./notifications.js"
+export const validateForm = formInputs => {
+    let valid = true;
 
-    let valido = true;
-    let email = document.querySelector('#mail');
-    let regex = /\w+@\w+\.\w+/g;
-    let send = document.querySelector('.send-button');
-    let send2 = document.querySelector('.pay-button');
+    for(let i = 0; i < formInputs.length; i++) {
 
-
-
+        switch (formInputs[i].name) {
+            case "fname":
+            case "lname":
+                if (formInputs[i].value.match(/^[a-zA-Z\s]{2,20}/g) == null) {
+                    formInputs[i].classList.add("invalid")
+                    valid = false
+                } else {
+                    formInputs[i].classList.remove("invalid")
+                }
+                break;
+            case "telf":
+                if (formInputs[i].value.match(/^\d{9}$/g) == null) {
+                    formInputs[i].classList.add("invalid")
+                    valid = false
+                } else {
+                    formInputs[i].classList.remove("invalid")
+                }
+                break;
+            case "email":
+                if (formInputs[i].value.match(/\w+@\w+\.\w+/g) == null) {
+                    formInputs[i].classList.add("invalid")
+                    valid = false
+                } else {
+                    formInputs[i].classList.remove("invalid")
+                }
+                break;
+            case "text":
+                if (formInputs[i].value.match(/^[a-zA-Z\s]{4}/g) == null) {
+                    formInputs[i].classList.add("invalid")
+                    valid = false
+                } else {
+                    formInputs[i].classList.remove("invalid")
+                }
+                break;
+            case "city":
+                if (formInputs[i].value.match(/^[a-zA-Z\s]{4}/g) == null) {
+                    formInputs[i].classList.add("invalid")
+                    valid = false
+                } else {
+                    formInputs[i].classList.remove("invalid")
+                }
+                break;
+            case "cp":
+                if (formInputs[i].value.match(/^\d{2-9}$/g) == null) {
+                    formInputs[i].classList.add("invalid")
+                    valid = false
+                } else {
+                    formInputs[i].classList.remove("invalid")
+                }
+                break;
+            case "direction":
+                if (formInputs[i].value.match(/^[a-zA-Z\s]{4}/g) == null) {
+                    formInputs[i].classList.add("invalid")
+                    valid = false
+                } else {
+                    formInputs[i].classList.remove("invalid")
+                }
+                break;
+            default:
+                break;
+        }
+    }
+    
+    renderNotification();
+    if(!valid){
+        document.dispatchEvent(new CustomEvent('message', {
+            detail: {
+                text: 'Los datos del formulario no son válidos',
+                type: 'error'
+            }
+        }))
+    }
+    return valid;
     
 }
