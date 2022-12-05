@@ -1,0 +1,27 @@
+.tabla {
+    padding: 0rem 3rem;
+}
+
+.tabla-panel {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-self: center;
+    padding: 1rem 2rem;
+    border-collapse: collapse; margin: 25px 0; 
+    font-size: 1em;  
+    min-width: 450px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+    & td{
+        padding: 0.5rem 0.5rem; 
+    }
+}
+.registros {
+    padding: 0rem 3rem;
+}
+.pagina {
+    display: flex;
+    padding: 0rem 5rem;
+    justify-content: end;
+}
