@@ -1,0 +1,66 @@
+header{
+    background-color: rgba(133, 87, 54, 0.637);
+    height: 7vh;
+    padding: 0 2%;
+    width: 96%;
+
+    .logo{
+        align-items: center;
+        display: flex;
+        width: 100%;
+        height: 100%;
+    
+        .logo-image{
+            margin-right: 1rem;
+            transform: rotateZ(-40deg);
+        }
+        
+        .logo-name span{
+            font-size: 2rem;
+        }
+    }
+
+    .header-menu{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 7vh;
+    
+        nav{
+            height: 100%;
+            width: 100%;
+        }
+
+        ul{
+            align-items: center;
+            display: flex;
+            height: 100%;
+            justify-content: space-between;
+            margin-left: auto;
+            width: 40%;
+        
+            .header-menu-item {
+                align-self: center;
+            }
+        
+            .header-menu-item a{
+                font-size: 1.5rem;
+            }
+        }
+        
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

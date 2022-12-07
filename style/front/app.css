@@ -656,6 +656,26 @@ footer .bussiness-footer-link {
   padding: 0 1rem;
 }
 
+.notification {
+  border: 2px solid hsl(27deg, 55%, 32%);
+  border-radius: 0.5em;
+  background-color: hsla(32deg, 46%, 82%, 0.473);
+  padding: 2rem;
+  width: 10%;
+  display: flex;
+  margin-left: 38rem;
+  justify-content: center;
+  position: fixed;
+}
+.notification.error {
+  border: 2px solid hsl(0deg, 88%, 62%);
+  background-color: hsla(0deg, 100%, 87%, 0.342);
+}
+.notification.success {
+  border: 2px solid hsl(115deg, 48%, 40%);
+  background-color: hsla(138deg, 100%, 87%, 0.342);
+}
+
 .contact-option-icon {
   padding: 1rem;
 }
@@ -729,25 +749,6 @@ footer .bussiness-footer-link {
   border: 2px solid hsl(0deg, 88%, 62%);
   border-radius: 0.5em;
   width: 100%;
-}
-.form-element .notification {
-  border: 2px solid hsl(27deg, 55%, 32%);
-  border-radius: 0.5em;
-  background-color: hsla(32deg, 46%, 82%, 0.473);
-  padding: 2rem;
-  width: 10%;
-  display: flex;
-  margin-left: 38rem;
-  justify-content: center;
-  position: fixed;
-}
-.form-element .notification .notification .error {
-  border: 2px solid hsl(0deg, 88%, 62%);
-  background-color: hsla(0deg, 100%, 87%, 0.342);
-}
-.form-element .notification .notification .success {
-  border: 2px solid hsl(115deg, 48%, 40%);
-  background-color: hsla(138deg, 100%, 87%, 0.342);
 }
 
 .contenedor {

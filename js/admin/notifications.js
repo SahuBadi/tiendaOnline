@@ -1,7 +1,7 @@
 export const renderNotification = () => {
 
     document.addEventListener("message", (event =>{
-        let notification = document.getElementsByClassName("notification");
+        let notification = document.querySelector(".notification");
         let notificationText = document.getElementById("notification-message");
 
         notificationText.innerHTML = event.detail.text;

@@ -1,0 +1,15 @@
+.burguer-menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+
+    & ul {
+        display: none;
+      }
+    & input:checked  ~ ul{
+        display:block;
+      }
+  }
+

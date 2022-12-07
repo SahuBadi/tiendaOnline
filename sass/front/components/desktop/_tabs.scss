@@ -28,6 +28,13 @@
   float: left;
   padding: 0.5rem 2rem;
 
+  &.panel {
+    border:hsl(25, 81%, 25%) solid 1px;
+    border-top-right-radius: 0rem;
+    border-top-left-radius: 0rem;
+    padding: 2rem 2rem;
+  }
+
   &.active{
     background-color: hsl(25, 81%, 25%);
 
@@ -45,3 +52,4 @@
     display: block;
   }
 }
+

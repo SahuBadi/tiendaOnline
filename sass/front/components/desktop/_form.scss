@@ -1,0 +1,42 @@
+.form {
+    position: absolute;
+}
+
+.form-element{
+
+  margin-bottom: 2rem;
+
+  .form-element-label{
+    margin-bottom: 0.5rem;
+  }
+
+  .form-element-label label{
+    font-size: 1.5rem;
+  }
+
+  .form-element-input{
+    border: 2px solid $white-color;
+    border-radius: 0.5em;
+    width: 100%;
+  }
+
+  .form-element-input input{
+    width: 100%;
+  }
+
+  .counter{
+    padding-left: 24rem;
+  }
+
+  .invalid{
+    border: 2px solid hsl(0, 88%, 62%);
+    border-radius: 0.5em;
+    width: 100%;
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+//z-index
+$z-index-featured-image: 1000;
+$z-index-slider-image: 1000;
+$z-index-featured-elements: 1001;
+$z-index-slider-elements: 1001;
+$z-index-header: 5000;
+$z-index-header-menu: 5000;
+$z-index-overlay: 5001;
+$z-index-spinner: 5002;
+
+//typography
+$font-stack: "Ubuntu", sans-serif;
+$font-stack-condensed: "Ubuntu Condensed", sans-serif;
+
+//colors
+
+/*
+$primary-color: hsl(226, 63%, 45%);
+$primary-color-light: hsl(226, 71%, 63%);
+$secondary-color: hsl(183, 98%, 35%);*/
+
+$font-color: hsl(19, 55%, 34%);
+$icon-color: hsl(24, 69%, 25%);
+$header-color: rgba(133, 87, 54, 0.637);
+$main-color: hsl(31, 61%, 92%);
+$main-color-card: hsl(24, 51%, 81%);
+$white-color: hsl(0, 0%, 100%);
+$slider-color: rgba(247, 247, 247, 0.527);
+$shadow-color: hsla(24, 35%, 28%, 0.514);
+
+//style
+/*$text-border: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;*/
